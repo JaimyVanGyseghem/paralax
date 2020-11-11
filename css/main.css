@@ -1,0 +1,426 @@
+@import url('grid.css');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url('../images/achtergrond.svg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+:root {
+  --color-red: #C91935;
+  --color-red-hover: rgb(250, 93, 119);
+  --color-pink: #FFAFAF;
+  --color-white: #FFF;
+  --color-pink-hover: rgb(255, 225, 225);
+  --bighero6: 'Big Hero 6';
+}
+
+/* main page */
+h1 {
+  font-family: var(--bighero6);
+}
+
+.mainImg {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+
+}
+
+.title {
+  text-align: center;
+  font-size: 75px;
+  text-shadow: -9px 0px 2px var(--color-white);
+  color: var(--color-red);
+}
+
+/* nav bar */
+nav ul li a:hover {
+color: var(--color-pink-hover);
+cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin-left: 50px;
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--bighero6);
+  background-color: var(--color-red);
+  padding: 15px 0px;
+  margin-top: 20px;
+  font-size: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav ul li {
+  margin-right: 30px;
+}
+
+nav ul li a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+/* begin microbots */
+.group_photo {
+  position: relative;
+}
+
+.microbot {
+  position: absolute;
+}
+
+.micro1 {
+  left: 400px;
+  top: 300px;
+  width: 5%;
+  transform: rotate(110deg);
+}
+
+.micro2 {
+  left: 400px;
+  top: 450px;
+  width: 3%;
+  transform: rotate(-30deg);
+}
+
+.micro3 {
+  left: 500px;
+  top: 30px;
+  width: 4%;
+  transform: rotate(-30deg);
+}
+
+.micro4 {
+  left: 700px;
+  top: 90px;
+  width: 7%;
+  transform: rotate(200deg);
+}
+
+.micro5 {
+  left: 850px;
+  top: 90px;
+  width: 2%;
+  transform: rotate(160deg);
+}
+
+.micro6 {
+  left: 1000px;
+  top: 20px;
+  width: 4%;
+  transform: rotate(200deg);
+}
+
+.micro7 {
+  left: 1100px;
+  top: 120px;
+  width: 4%;
+  transform: rotate(15deg);
+}
+
+
+.micro8 {
+  left: 1100px;
+  top: 280px;
+  width: 7%;
+  transform: rotate(115deg);
+}
+
+.micro9 {
+  Left: 1120px;
+  top: 450px;
+  width: 5%;
+  transform: rotate(-90deg);
+}
+
+.micro10 {
+  left: 1200px;
+  top: 400px;
+  width: 5%;
+  transform: rotate(-20deg);
+}
+
+/* end microbots
+
+/* end nav bar */
+
+/* end main page */
+
+/* begin story content */
+
+.storyline {
+  margin-top: 80px;
+}
+
+.row1 {
+  background-color: var(--color-pink);
+  z-index: -1;
+}
+
+.row2 {
+  margin-left: 80px;
+}
+
+.side {
+  position: absolute;
+  transform: rotate(-90deg);
+  margin-top: 250px;
+}
+
+.first {
+  margin-top: 80px;
+}
+
+.row2 p,
+.row3 p {
+  line-height: 1.5em;
+  font-size: 20px;
+}
+
+.robot {
+  width: 92%;
+}
+
+.baymax {
+  width: 75%;
+  position: absolute;
+  margin-left: -30px;
+
+}
+
+.redcolor {
+  background: #fdf6f7;
+}
+
+.text_block {
+  position: relative;
+  height: 250px;
+}
+
+.text_center {
+  display: flex;
+  align-items: center;
+}
+
+.blocks {
+  margin-top: 70px;
+}
+
+.margins {
+  margin-top: 120px;
+}
+
+.text_center .test {
+  width: 30%;
+}
+
+.microbot1 {
+  width: 30%;
+  transform: rotate(135deg);
+  left: 30px;
+}
+
+.microbot2 {
+  width: 7%;
+  transform: rotate(-105deg);
+  top: 160px;
+  left: 210px;
+}
+
+.microbot3 {
+  width: 17%;
+  transform: rotate(45deg);
+  top: 90px;
+  left: 150px;
+}
+
+.microbot4 {
+  width: 17%;
+  transform: rotate(290deg);
+  top: 180px;
+  left: 130px;
+}
+
+.mask {
+  width: 50%;
+  margin-left: 70px;
+  margin-top: 25px;
+}
+
+.text {
+  margin-top: 85px;
+}
+
+.bayhero {
+  width: 70%;
+  margin-top: 40px;
+}
+
+.chip {
+  width: 80%;
+  transform: rotate(340deg);
+  margin-top: 40px;
+}
+
+/* end story content */
+
+/* begin hero info and the paralax effect*/
+
+.parallax {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+}
+
+.parallax p {
+  font-size: 3em;
+  color: white;
+  font-weight: 700;
+}
+
+.mainphoto {
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.background .parallax:nth-child(1) {
+  background: url('../images/achtergrond2.svg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.background .parallax:nth-child(2) {
+  background-image: url('../images/achtergrond_hiro.svg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.background .parallax:nth-child(3) {
+  background-image: url('../images/achtergrond_baymax.svg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.background .parallax:nth-child(4) {
+  background-image: url('../images/achtergrond_gogo.svg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.background .parallax:nth-child(5) {
+  background-image: url('../images/achtergrond_honey.svg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.background .parallax:nth-child(6) {
+  background-image: url('../images/achtergrond_wasabi.svg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.background .parallax:nth-child(7) {
+  background-image: url('../images/achtergrond_fred.svg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+
+.stickybackground {
+  background-attachment: fixed;
+}
+
+/* end paralax effect */
+
+.smaller {
+  width: 40%;
+  margin-left: 100px;
+}
+
+.canvas {
+  position: relative;
+}
+.smaller_baymax {
+  width: 35%;
+  margin-left: 100px;
+}
+
+.smaller2 {
+  width: 10%;
+}
+
+.smaller3 {
+  width: 25%;
+  margin-top: 90px;
+  margin-left: -90px;
+}
+
+.position {
+  position: absolute;
+  top: 60px;
+  left: 100px;
+  font-family: var(--bighero6);
+  color: white;
+}
+
+.position h2 {
+  margin-left: -50px;
+  margin-top: 35px;
+  font-size: 30px;
+  text-align: center;
+  width: 17%;
+}
+
+/* end char info */
+
+/* begin trailer content */
+
+.video {
+  background-image: url('../images/achtergrond_video.svg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.video iframe {
+  margin-top: 65px;
+  margin-bottom: 50px;
+}
+
+.video h1 {
+  color: var(--color-red);
+  padding-top: 60px;
+  font-size: 60px;
+  margin-bottom: -20px;
+}
+
+/* end trailer content */
+
+/* begin footer */
+
+footer {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  padding: 5px;
+  text-align: center;
+}
+
+/* end footer */
